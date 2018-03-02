@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>value <span class="value"></span></h1>
+    <h1>length <span class="length"></span></h1>
+    <h1>type <span class="type"></span></h1>
+    <script>
+        var question = prompt('what is your name');
+        var value = document.querySelector('.value');
+        value.innerHTML = question;
+
+        document.querySelector('.length').innerHTML = question.length;
+        document.querySelector('.type').innerHTML = question.typeof;
+
+    </script>
+  </body>
+</html>
